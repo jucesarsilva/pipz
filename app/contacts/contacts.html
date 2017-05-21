@@ -1,0 +1,26 @@
+<alert></alert>
+<md-toolbar class="contact-card" data-ng-init="init()">
+	<div class="md-toolbar-tools">
+	    <h3>
+	        <div flex="" layout="column" class="layout-column flex">
+	            <md-list class="listdemoListControls">
+	                    <md-list-item class="noright">
+	                        <p>Contatos</p>
+	                    </md-list-item>
+	            </md-list>
+	        </div>
+	    </h3>
+	    <span flex></span>
+	    <ANY>
+	        <md-button class="md-raised" data-ng-click="create()">Novo Contato</md-button>
+	    </ANY>
+	</div>
+</md-toolbar>
+<div flex="" layout="column" class="layout-column flex contact-card">
+    <md-list class="listdemoListControls">
+        <md-list-item ng-repeat="person in contacts" ng-click="goToDetails(person, $event)" class="noright">
+            <img alt="{{ person.name }}" ng-src="{{ person.avatar }}" class="md-avatar">
+            <p>{{ person.name }}</p>
+        </md-list-item>
+    </md-list>
+</div>

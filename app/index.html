@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="pipz" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="pipz" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="pipz" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="pipz" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>pipz</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="icon.ico" />
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="components/angular-motion/angular-motion.css">
+    <link rel="stylesheet" href="components/angular-motion/modules/fade.css">
+    <link rel="stylesheet" href="components/directives/alert/alert.css">
+</head>
+<body data-ng-cloak class="pipz">
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+    
+    
+    <div class="main-content" data-ng-view></div>
+    <!-- scripts -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/moment/min/locales.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-aria/angular-aria.min.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.min.js"></script>
+    <script src="bower_components/lodash/dist/lodash.core.min.js"></script>
+    <script src="bower_components/lodash/dist/lodash.fp.min.js"></script>
+    <script src="bower_components/lodash/dist/lodash.min.js"></script>
+    <script src="bower_components/restangular/dist/restangular.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-material/angular-material.js"></script>
+    <script src="bower_components/angular-input-masks/angular-input-masks-dependencies.js"></script>
+    <script src="bower_components/angular-input-masks/angular-input-masks.br.js"></script>
+
+    <!-- modules declarations -->
+    <script src="modules.js"></script>
+    <!-- centralized modules -->
+    <script src="components/directives/directives.js"></script>
+    <script src="components/filters/filters.js"></script>
+    <script src="components/services/services.js"></script>
+    <!-- app components -->
+    <script src="components/filters/moment/moment.js"></script> 
+    <script src="components/filters/trusted/trusted.js"></script> 
+    <script src="components/services/notification/notification.js"></script>
+    <script src="components/directives/alert/alert.js"></script>
+    <script src="components/directives/popover/helpers/dimensions.js"></script>
+    <script src="components/directives/popover/tooltip.js"></script>
+    <script src="components/directives/popover/popover.js"></script>
+    <script src="components/services/contact/contactService.js"></script>
+    <script src="app.js"></script>
+    <script src="contacts/contacts.js"></script>
+    <script src="info/info.js"></script>
+</body>
+</html>
